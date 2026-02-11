@@ -1,0 +1,42 @@
+From 6ee2414e0577d62bb8a110ec8dbbd7c2ec8ec024 Mon Sep 17 00:00:00 2001
+From: "Sanghun.Han" <Sanghun.Han@cloudmt.co.kr>
+Date: Thu, 12 Feb 2026 01:28:17 +0900
+Subject: [PATCH] b
+
+---
+ peoples/sanghun/chapter1/temp.md | 19 +++++++++++--------
+ 1 file changed, 11 insertions(+), 8 deletions(-)
+
+diff --git a/peoples/sanghun/chapter1/temp.md b/peoples/sanghun/chapter1/temp.md
+index 8e531d8..3893a66 100644
+--- a/peoples/sanghun/chapter1/temp.md
++++ b/peoples/sanghun/chapter1/temp.md
+@@ -1,12 +1,15 @@
+ ``` csharp
+ var deletedItems = GetItems(conditions);
+-if (deletedItems.Count > 0)
++if (deletedItems.Count <= 0)
++	return NoContent();
++
++try 
+ {
+-	try 
+-	{
+-		DoDelete(deletedItem);
+-		return NoContent();
+-	}
+-	Catch() {...}
++	DoDelete(deletedItem);
++	return NoContent();
+ }
+-```
+\ No newline at end of file
++Catch() {...}
++
++```
++
++반복문에서 continue 나 break를 활용한 보호 구문을 이용한 코드 정리도 괜찮다
+\ No newline at end of file
+-- 
+2.51.1.windows.1
+
