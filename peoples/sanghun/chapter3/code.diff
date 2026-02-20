@@ -1,0 +1,23 @@
+From 86e28957a2ae3ef130eed60772a157125e610ecd Mon Sep 17 00:00:00 2001
+From: "Sanghun.Han" <Sanghun.Han@cloudmt.co.kr>
+Date: Thu, 12 Feb 2026 01:36:40 +0900
+Subject: [PATCH] b
+
+---
+ peoples/sanghun/chapter3/a.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/peoples/sanghun/chapter3/a.md b/peoples/sanghun/chapter3/a.md
+index bb634ac..14d8665 100644
+--- a/peoples/sanghun/chapter3/a.md
++++ b/peoples/sanghun/chapter3/a.md
+@@ -1,5 +1,5 @@
+ ``` csharp
+-if (!isPattern)
++if (isPattern == false)
+ {
+ 	...
+ }
+-- 
+2.51.1.windows.1
+
